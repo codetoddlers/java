@@ -1,10 +1,10 @@
 https://junit.org/junit5/docs/current/user-guide/
 https://junit.org/junit5/docs/current/user-guide/#migrating-from-junit4
 
-
+---------------
 https://help.github.com/en/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line
 https://github.com/codetoddlers/java
-Quick setup — if you’ve done this kind of thing before
+Quick setup  if youve done this kind of thing before
 or	
 HTTPS
 https://github.com/codetoddlers/java.git
@@ -12,15 +12,56 @@ SSH
 git@github.com:codetoddlers/java.git
 Get started by creating a new file or uploading an existing file. We recommend every repository include a README, LICENSE, and .gitignore.
 
-…or create a new repository on the command line
+or create a new repository on the command line
 echo "# java" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
 git remote add origin git@github.com:codetoddlers/java.git
 git push -u origin master
-…or push an existing repository from the command line
+or push an existing repository from the command line
 git remote add origin git@github.com:codetoddlers/java.git
 git push -u origin master
-…or import code from another repository
+or import code from another repository
 You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+
+-------
+
+$ git commit -m "Learn Java"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <>) not allowed
+
+---------
+
+$ git add .
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory
+
+---------
+
+$ git push -u origin master
+The authenticity of host 'github.com (13.234.176.102)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,13.234.176.102' (RSA) to the list of known hosts.
+Enumerating objects: 67, done.
+Counting objects: 100% (67/67), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (39/39), done.
+Writing objects: 100% (67/67), 8.13 KiB | 362.00 KiB/s, done.
+Total 67 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To github.com:codetoddlers/java.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
